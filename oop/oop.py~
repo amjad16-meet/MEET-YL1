@@ -10,10 +10,20 @@ class Animal:
 		print(self.color)
 		print(self.size)
 		print(self.age)
+	def sleep(self):
+		print(self.name, "is sleeping")
+	def eat(self,food):
+		print(self.name, "is eating",food)
 
-Dog=Animal(name="max",color="red",size="huge",age=5)
-Lion=Animal(name="rex",color="black",size="large",age=8)
+dog=Animal(name="max",color="red",size="huge",age=5)
+cat=Animal(name="rex",color="black",size="large",age=8)
 
-Dog.print_all()
-print("######")
-Lion.print_all()
+dog.print_all()
+print("##############")
+
+dog.eat("meat")
+
+cat.eat("fish")
+
+print("##############")
+cat.print_all()
